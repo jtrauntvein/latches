@@ -38,10 +38,10 @@ class SrLatch {
     * Sets up an event handler that will be called after one of the inputs has been changed
     * @param {@import("jhtrauntvein-basic-logic-gates").OutputHandlerType} handler specifies the function that will be called 
     * with the given output channel's value after an input has been changed
-    * @param {number} channel specifies the channel on which the handelr will be registered.  a value of 0 will 
+    * @param {number=0} channel specifies the channel on which the handelr will be registered.  a value of 0 will 
     * monitor the Q output and a value of 1 will monitor the NOT(Q) output 
     */
-   on(handler, channel) {
+   on(handler, channel = 0) {
       if(channel === 0) {
          this.#g1.on((value) => {
             handler(value, 0, this);
