@@ -1,0 +1,26 @@
+{
+  "name": "jhtrauntvein-latches",
+  "version": "1.0.0",
+  "description": "Examples of latches built using basic-logic-gate components",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "keywords": [
+    "logic",
+    "gates",
+    "latches"
+  ],
+  "author": "Jon Trauntvein",
+  "license": "MIT",
+  "dependencies": {
+    "jhtrauntvein-basic-logic-gates": "^1.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtrauntvein/latches.git"
+  }
+}
