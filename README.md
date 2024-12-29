@@ -17,6 +17,7 @@ illustrates using the latches in independent programs.
     - [3.1.2. `set_enable()` Sets the Enable Line](#312-set_enable-sets-the-enable-line)
     - [3.1.3. `on()` Add A Monitor Function](#313-on-add-a-monitor-function)
     - [3.1.4. `set()` Set an Input Line](#314-set-set-an-input-line)
+  - [3.2. Example](#32-example)
 
 
 ## 1. What is a Latch?
@@ -142,7 +143,7 @@ This function sets the value of one of the device's input lines and expects the 
 This method will return an array of two booleans that reflect the state of the internal S-R latch after
 the input value has been changed.
 
-### Example
+### 3.2. Example
 
 The following code creates a D latch sets up a monitor function, and then sets the values of its inputs
 
