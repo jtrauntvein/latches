@@ -1,6 +1,6 @@
 {
   "name": "jhtrauntvein-latches",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Examples of latches built using basic-logic-gate components",
   "main": "index.js",
   "scripts": {
