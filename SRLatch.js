@@ -61,6 +61,14 @@ class SrLatch {
    evaluate() {
       return [ this.#g1.evaluate()[0], this.#g2.evaluate()[0] ];
    }
+
+   /**
+    * Overrides the handle_outputs to call the versions for the nor gates
+    */
+   handle_outputs(outputs) {
+      this.#g1.handle_outputs([ outputs[0] ]);
+      this.#g2.handle_outputs([ outputs[1] ]);
+   }
 };
 
 module.exports = {
