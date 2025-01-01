@@ -82,6 +82,26 @@ class DLatch {
    set_enable(value) {
       return this.set(value, 1);
    }
+
+   /**
+    * @return {boolean} returns the cached value for the given input channel
+    * @param {number} channel specifies the input channel.  Must be one of:
+    * - 0: reset line
+    * - 1: set line
+    */
+   get_input(channel) {
+      let rtn;
+      if(channel === 0) {
+         rtn = this.#input1.get_input(0);
+      }
+      else if(channel === 1) {
+         rtn = this.#input2.get_input(1);
+      }
+      else {
+         throw Error(`invalid channel value: ${channel}`);
+      }
+      return rtn;
+   }
 };
 
 module.exports = {
