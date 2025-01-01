@@ -7,13 +7,11 @@ latch.set_d(true);
 console.log("setting E to true");
 latch.set_enable(true);
 
+console.log("setting D to false");
+latch.set_d(false);
 console.log("setting E to false");
 latch.set_enable(false);
 console.log("setting D to false");
 latch.set_d(false);
 console.log(`latch state is ${latch.evaluate()[0]}`);
 
-console.log("setting enable to true");
-console.log("setting D to true");
-console.log(`latch state is ${latch.evaluate()[0]}`);
-console.log("sett")
